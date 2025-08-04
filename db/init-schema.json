@@ -1,0 +1,34 @@
+{
+    "schemas":[
+        {
+            "responses": {
+                "fields": [
+                    { "name": "id", "type": "integer", "primaryKey": true, "autoIncrement": true, "label": "ID" },
+                    { "name": "name", "type": "text", "label": "Name" },
+                    { "name": "email", "type": "text", "label": "Email" },
+                    { "name": "experience", "type": "text", "label": "Experience" },
+                    { "name": "feedback", "type": "text", "label": "Feedback" },
+                    { "name": "created_at", "type": "timestamp", "default": "now()", "label": "Created At" }
+                ]
+            }
+        }
+    ],
+    "records":[
+        {
+            "responses":[
+                {
+                    "name": "Jane Doe",
+                    "email": "jane.doe@example.com",
+                    "experience": "excellent",
+                    "feedback": "Great product, very easy to use!"
+                },
+                {
+                    "name": "John Smith",
+                    "email": "john.smith@example.com",
+                    "experience": "good",
+                    "feedback": "I liked it, but it could use more features."
+                }
+            ]
+        }
+    ]
+}
